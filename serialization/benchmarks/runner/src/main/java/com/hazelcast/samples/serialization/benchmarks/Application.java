@@ -38,10 +38,11 @@ public class Application {
         PersonCollection kryo = getKryo();
         PersonCollection protobuf = getProtobuf();
 
+        // temporaily removed protobuf -- throwing NoSuchFieldError on fieldAccessorTable
         List<PersonCollection> personsInDifferentFormats
             = Arrays.asList(serializable, externalizable, dataSerializable,
                     identifiedDataSerializable, portable, versionedPortable, compact, hazelcastJson,
-                    avro, kryo, protobuf);
+                    avro, kryo /*,protobuf*/);
 
         System.out.println();
         System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ");
