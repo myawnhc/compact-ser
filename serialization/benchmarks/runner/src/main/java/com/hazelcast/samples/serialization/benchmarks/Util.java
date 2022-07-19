@@ -37,6 +37,10 @@ public class Util {
         serializationConfig.addSerializerConfig(personAvroSerializerConfig);
         serializationConfig.addSerializerConfig(personKryoSerializerConfig);
         serializationConfig.addSerializerConfig(personProtobufSerializerConfig);
+        // Explicit enablement required until 5.2 GA
+        serializationConfig.getCompactSerializationConfig().setEnabled(true)
+                .register(Person.class)
+                .register(Passport.class);
 
         SerializationService serializationService =
                 new DefaultSerializationServiceBuilder()
