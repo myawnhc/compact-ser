@@ -44,8 +44,8 @@ public class Util {
         serializationConfig.addSerializerConfig(personProtobufSerializerConfig);
         // Explicit enablement required until 5.2 GA
         serializationConfig.getCompactSerializationConfig().setEnabled(true)
-                .register(Person.class)
-                .register(Passport.class);
+                .register(PersonCompact.class)
+                .register(PassportCompact.class);
 
 
         // Taken from CompactTestUtil.createInMemorySchemaService

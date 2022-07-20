@@ -224,8 +224,8 @@ public class Timer {
     }
 
     private void deserializeHazelcastCompact(Object o, String issuingCountry) {
-        Passport passportCompact =
-                ((Person) o).getPassport();
+        PassportCompact passportCompact =
+                ((PersonCompact) o).getPassport();
         if (passportCompact != null) {
             issuingCountry = passportCompact.getIssuingCountry();
         }

@@ -12,7 +12,7 @@ public class PersonCompactCollectionBuilder implements PersonCollectionBuilder {
 
     @Override
     public PersonCollectionBuilder addData(Object[][] raw) {
-        Passport passport = new Passport();
+        PassportCompact passport = new PassportCompact();
         passport.setExpiryDate(MyConstants.EXPIRY_DATE);
         passport.setIssuingCountry(MyConstants.ISSUING_COUNTRY);
         passport.setIssuingDate(MyConstants.ISSUING_DATE);
@@ -22,7 +22,7 @@ public class PersonCompactCollectionBuilder implements PersonCollectionBuilder {
             String lastName = (String) trio[1];
             boolean hasPassport = (boolean) trio[2];
 
-            Person person = new Person();
+            PersonCompact person = new PersonCompact();
             person.setFirstName(firstName);
             person.setLastName(lastName);
             if (hasPassport) {

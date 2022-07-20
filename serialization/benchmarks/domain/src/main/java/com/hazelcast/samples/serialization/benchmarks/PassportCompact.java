@@ -6,7 +6,7 @@ package com.hazelcast.samples.serialization.benchmarks;
  * with new Compact Serialization.
  * </p>
  */
-public class Passport {
+public class PassportCompact {
 
     private String expiryDate;
     private String issuingCountry;
@@ -34,7 +34,7 @@ public class Passport {
     }
     @Override
     public String toString() {
-        return "Passport [expiryDate=" + expiryDate + ", issuingCountry=" + issuingCountry
+        return "PassportCompact [expiryDate=" + expiryDate + ", issuingCountry=" + issuingCountry
                 + ", issuingDate=" + issuingDate + "]";
     }
 

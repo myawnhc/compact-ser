@@ -42,7 +42,7 @@ public class Application {
         List<PersonCollection> personsInDifferentFormats
             = Arrays.asList(serializable, externalizable, dataSerializable,
                     identifiedDataSerializable, portable, versionedPortable, compact, hazelcastJson,
-                    avro, kryo /*,protobuf*/);
+                    avro, kryo,protobuf);
 
         System.out.println();
         System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ");

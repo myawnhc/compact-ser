@@ -6,11 +6,11 @@ package com.hazelcast.samples.serialization.benchmarks;
  * with new Compact Serialization.
  * </p>
  */
-public class Person {
+public class PersonCompact {
 
     private String firstName;
     private String lastName;
-    private Passport passport;
+    private PassportCompact passport;
 
     // Java getters, setters and toString.
 
@@ -26,15 +26,15 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public Passport getPassport() {
+    public PassportCompact getPassport() {
         return passport;
     }
-    public void setPassport(Passport passport) {
+    public void setPassport(PassportCompact passport) {
         this.passport = passport;
     }
     @Override
     public String toString() {
-        return "Person [firstName=" + firstName + ", lastName=" + lastName + ", passport=" + passport + "]";
+        return "PersonCompact [firstName=" + firstName + ", lastName=" + lastName + ", passport=" + passport + "]";
     }
 
 }
