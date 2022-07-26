@@ -14,6 +14,8 @@
     <!-- Suppress duplicate checking of copyright notice -->
     <suppress checks="StrictDuplicateCode" files="\.java" lines="1-15"/>
 
+    <suppress checks="ClassDataAbstractionCoupling" files="com/hazelcast/samples/serialization/benchmarks/Application"/>
+    <suppress checks="CyclomaticComplexity" files="com/hazelcast/samples/serialization/benchmarks/Timer"/>
     <suppress checks="NPathComplexity" files="com/hazelcast/examples/iterator/CacheIteratorUsage"/>
     <suppress checks="VisibilityModifierCheck" files="member/*" />
     <suppress checks="VisibilityModifierCheck" files="client/*" />

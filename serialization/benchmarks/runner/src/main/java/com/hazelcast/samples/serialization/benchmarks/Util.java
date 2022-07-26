@@ -11,7 +11,6 @@ import com.hazelcast.internal.serialization.SerializationService;
 import com.hazelcast.internal.serialization.impl.DefaultSerializationServiceBuilder;
 import com.hazelcast.internal.serialization.impl.compact.Schema;
 import com.hazelcast.internal.serialization.impl.compact.SchemaService;
-import com.hazelcast.internal.serialization.impl.compact.schema.MemberSchemaService;
 
 public class Util {
     private static NumberFormat numberFormat = NumberFormat.getInstance(Locale.getDefault());
@@ -83,7 +82,7 @@ public class Util {
                 .addPortableFactory(MyConstants.MY_VERSIONED_PORTABLE_FACTORY_ID,
                         new MyVersionedPortableFactory())
                 .setConfig(serializationConfig)
-                        .setSchemaService( fakeSchemaService )
+                        .setSchemaService(fakeSchemaService)
                 .build();
 
         preRegisterNullTypes(serializationService);
