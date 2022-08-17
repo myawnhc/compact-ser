@@ -32,4 +32,13 @@
 
     <suppress checks="[a-zA-Z0-9]*" files="jet/files/unifiedapi/generated/AvroTrade" />
     <suppress checks="[a-zA-Z0-9]*" files="jet/hadoop/generated/User" />
+    <!-- Avro generated -->
+    <suppress checks="[a-zA-Z0-9]*" files="com/hazelcast/samples/serialization/benchmarks/PassportAvro" />
+    <suppress checks="[a-zA-Z0-9]*" files="com/hazelcast/samples/serialization/benchmarks/PersonAvro" />
+    <!-- Protobuf generated -->
+    <suppress checks="[a-zA-Z0-9]*" files="com/hazelcast/samples/serialization/benchmarks/PassportProtobuf" />
+    <suppress checks="[a-zA-Z0-9]*" files="com/hazelcast/samples/serialization/benchmarks/Person" />
+    <suppress checks="[a-zA-Z0-9]*" files="com/hazelcast/samples/serialization/benchmarks/PersonProtobuf" />
+    <!-- JMH generated -->
+    <suppress checks="[a-zA-Z0-9]*" files="com/hazelcast/samples/serialization/benchmarks/jmh_generated" />
 </suppressions>
